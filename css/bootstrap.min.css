@@ -537,6 +537,8 @@ footer {
 .project {
   position: relative;
   max-width: 900px;
+  min-height: 300px;
+  max-height: 300px;
   margin: 0 auto 50px auto;
   overflow: hidden;
   background: #fff;
@@ -872,20 +874,6 @@ footer {
   }
 }
 
-@keyframes text3 {
-
-  0%,
-  50%,
-  100% {
-    width: 0;
-  }
-
-  70%,
-  100% {
-    width: 21.2em;
-  }
-}
-
 @keyframes text2 {
 
   0%,
@@ -894,9 +882,11 @@ footer {
     width: 0;
   }
 
-  60%,
+  60% {
+    width: 5.7em;
+  }
   90% {
-    width: 10.2em;
+    width: 5.7em;
   }
 }
 
@@ -927,24 +917,51 @@ footer {
 }
 
 .text_1,
-.text_2,
-.text_3 {
+.text_2 {
   overflow: hidden;
   white-space: nowrap;
   display: inline-block;
   position: relative;
-  animation-duration: 20s;
-  animation-timing-function: steps(25, end);
+  animation-duration: 12s;
+  animation-timing-function: steps(17, end);
   animation-iteration-count: infinite;
 }
 
+
 .text_1::after,
-.text_2::after,
-text_3:after {
-  content: "|";
+.text_2::after {
+  content: " |";
   position: absolute;
   right: 0;
-  animation: caret infinite;
+  animation: blink infinite;
   animation-duration: 1s;
-  animation-timing-function: steps(1, end);
+  animation-timing-function: steps(1, 1, end);
 }
+
+.text_1::after,
+.text_2::after {
+  content: " |";
+  position: absolute;
+  right: 0;
+  animation-duration: 1s;
+  animation-timing-function: steps(1, 1, end);
+}
+
+      @keyframes blink {
+        0% {
+          opacity: 1;
+        }
+        
+        30% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+        55% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
