@@ -882,10 +882,10 @@ footer {
     width: 0;
   }
 
-  60% {
+  59% {
     width: 5.7em;
   }
-  90% {
+  80% {
     width: 5.7em;
   }
 }
@@ -898,8 +898,8 @@ footer {
     width: 0;
   }
 
-  10%,
-  40% {
+  14%,
+  30% {
     width: 11.7em;
   }
 }
@@ -923,7 +923,7 @@ footer {
   display: inline-block;
   position: relative;
   animation-duration: 12s;
-  animation-timing-function: steps(17, end);
+  animation-timing-function: steps(14, end);
   animation-iteration-count: infinite;
 }
 
