@@ -24,7 +24,8 @@ body.active {
   background: #fff;
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #dcd9d9
+  border: 1px solid #dcd9d9;
+  
 }
 
 .no-js #experience-timeline>div h3 {
@@ -50,7 +51,8 @@ body.active {
 
 .no-js #experience-timeline:before,
 .no-js #experience-timeline:after {
-  content: none
+  content: none;
+  
 }
 
 @keyframes dropHeader {
@@ -73,7 +75,9 @@ header {
   animation-name: dropHeader;
   animation-iteration-count: 1;
   animation-timing-function: ease;
-  animation-duration: 0.75s
+  animation-duration: 0.75s;
+  backdrop-filter: blur(0px);
+
 }
 
 header ul {
@@ -83,7 +87,9 @@ header ul {
   padding: 10px;
   margin: 0;
   border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px
+  border-bottom-left-radius: 4px;
+  backdrop-filter: blur(5px);
+
 }
 
 header li {
@@ -93,7 +99,9 @@ header li {
 header a {
   display: block;
   color: #3498db;
-  padding: 10px
+  padding: 10px;
+  backdrop-filter: blur(5px);
+
 }
 
 header a:hover {
@@ -132,7 +140,8 @@ header.sticky {
   z-index: 20;
   padding: 0 7px;
   border-radius: 4px;
-  background: #fff
+  background: #fff;
+
 }
 
 #mobile-menu-close {
@@ -144,16 +153,23 @@ header.sticky {
   padding-right: 15px;
   padding-top: 10px;
   cursor: pointer;
-  color: #3498db
+  color: #3498db;
+
 }
 
 #mobile-menu-close span {
   font-size: 0.5em;
-  text-transform: uppercase
+  text-transform: uppercase;
+  opacity: 0.5;
+  backdrop-filter: blur(5px);
+
 }
 
 #mobile-menu-close i {
-  vertical-align: middle
+  vertical-align: middle;
+  opacity: 0.5;
+  backdrop-filter: blur(5px);
+
 }
 
 footer {
@@ -372,17 +388,20 @@ footer {
 #experience {
   padding: 50px 15px;
   text-align: center;
-  border-bottom: 1px solid #dcd9d9
+  border-bottom: 1px solid #dcd9d9;
 }
 
 #experience h2 {
-  color: #374054
+  color: #374054;
+  
 }
 
 #experience-timeline {
-  margin: 30px auto 0 auto;
+  margin: 40px auto 0 auto;
   position: relative;
-  max-width: 1000px
+  max-width: 1000px;
+  backdrop-filter: blur(5px);
+
 }
 
 #experience-timeline:before {
@@ -395,7 +414,7 @@ footer {
   height: 100%;
   width: 3px;
   background: #3498db;
-  z-index: 0
+  z-index: 0;
 }
 
 #experience-timeline:after {
@@ -406,7 +425,8 @@ footer {
   background: #3498db;
   background: linear-gradient(to bottom, #3498db, rgba(52, 152, 219, 0));
   top: 100%;
-  left: 303px
+  left: 303px;
+
 }
 
 .vtimeline-content {
@@ -415,7 +435,8 @@ footer {
   border: 1px solid #e6e6e6;
   padding: 15px;
   border-radius: 3px;
-  text-align: left
+  text-align: left;
+  
 }
 
 .vtimeline-content h3 {
@@ -423,27 +444,33 @@ footer {
   font-weight: 300;
   color: #374054;
   display: inline-block;
-  margin: 0
+  margin: 0;
+
 }
 
 .vtimeline-content h4 {
   font-size: 1.2em;
   font-weight: 300;
   color: #7e8890;
-  margin: 0 0 15px 0
+  margin: 0 0 15px 0;
+
+
 }
 
 .vtimeline-content p {
   color: #74808a;
   font-size: 0.9em;
-  margin: 0
+  margin: 0;
+
+
 }
 
 .vtimeline-point {
   position: relative;
   display: block;
   vertical-align: top;
-  margin-bottom: 30px
+  margin-bottom: 30px;
+
 }
 
 .vtimeline-icon {
@@ -455,13 +482,16 @@ footer {
   border-radius: 50%;
   float: left;
   z-index: 99;
-  margin-left: 280px
+  margin-left: 280px;
+
+
 }
 
 .vtimeline-icon i {
   display: block;
   font-size: 2em;
-  margin-top: 10px
+  margin-top: 10px;
+
 }
 
 .vtimeline-date {
@@ -471,7 +501,8 @@ footer {
   left: 0;
   top: 10px;
   font-weight: 300;
-  color: #374054
+  color: #374054;
+
 }
 
 #education {
@@ -526,12 +557,13 @@ footer {
 #projects {
   padding: 50px 15px;
   border-bottom: 5px solid #dcd9d9;
-  text-align: center
+  text-align: center;
+
 }
 
 #projects h2 {
   color: #374054;
-  margin-bottom: 10px
+  margin-bottom: 10px;
 }
 
 .project {
@@ -542,11 +574,12 @@ footer {
   margin: 0 auto 50px auto;
   overflow: hidden;
   background: #fff;
-  border-radius: 4px
+  border-radius: 4px;
 }
 
 .project-image {
-  float: left
+  float: left;
+
 }
 
 .project-info {
@@ -554,7 +587,8 @@ footer {
   top: 50%;
   transform: translateY(-50%);
   margin-left: 300px;
-  padding: 15px
+  padding: 15px;
+
 }
 
 .project-info h3 {
@@ -574,7 +608,8 @@ footer {
   position: relative;
   margin: 0;
   padding: 30px 15px;
-  transform: none
+  transform: none;
+  
 }
 
 #more-projects {
@@ -583,7 +618,8 @@ footer {
 
 #skills {
   padding: 50px 15px;
-  text-align: center
+  text-align: center;
+  
 }
 
 #skills h2 {
@@ -606,13 +642,14 @@ footer {
   background: #e4e4ea;
   list-style: none;
   cursor: default;
-  font-size: 1.2em
+  font-size: 1.2em;
 }
 
 #contact {
   padding: 50px 15px;
   background: #3498db;
-  text-align: center
+  text-align: center;
+  
 }
 
 #contact h2 {
@@ -636,18 +673,21 @@ footer {
   margin-bottom: 10px;
   background: #1d6fa5;
   color: #fff;
-  transition: .5s ease all
+  transition: .5s ease all;
+
 }
 
 #contact-form input::-webkit-input-placeholder,
 #contact-form textarea::-webkit-input-placeholder {
-  color: #fff
+  color: #fff;
+
 }
 
 #contact-form input:-moz-placeholder,
 #contact-form textarea:-moz-placeholder {
   color: #fff;
-  opacity: 1
+  opacity: 1;
+
 }
 
 #contact-form input::-moz-placeholder,
@@ -658,13 +698,15 @@ footer {
 
 #contact-form input:-ms-input-placeholder,
 #contact-form textarea:-ms-input-placeholder {
-  color: #fff
+  color: #fff;
+
 }
 
 #contact-form input:focus,
 #contact-form textarea:focus {
   outline: none;
-  background: #16527a
+  background: #16527a;
+
 }
 
 #contact-form textarea {
@@ -682,11 +724,13 @@ footer {
   color: #3498db;
   font-weight: 700;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  transition: .5s ease all
+  transition: .5s ease all;
+
 }
 
 #contact-form button:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+
 }
 
 .optional-section {
@@ -749,11 +793,13 @@ footer {
   }
 
   .vtimeline-icon {
-    margin-left: 0
+    margin-left: 0;
+
   }
 
   .vtimeline-content {
-    margin-left: 70px
+    margin-left: 70px;
+
   }
 }
 
@@ -801,7 +847,8 @@ footer {
 
   #mobile-menu-open,
   #mobile-menu-close {
-    display: block
+    display: block;
+
   }
 
   #menu {
@@ -809,7 +856,8 @@ footer {
     overflow-y: auto;
     box-shadow: none;
     border-radius: 0;
-    width: 100%
+    width: 100%;
+
   }
 
   #menu li {
@@ -839,7 +887,8 @@ footer {
   }
 
   .project-image {
-    display: none
+    display: none;
+    
   }
 
   .project-info {
@@ -847,7 +896,8 @@ footer {
     margin: 0;
     padding: 30px 15px;
     top: auto;
-    transform: none
+    transform: none;
+    
   }
 
   footer {
@@ -945,6 +995,8 @@ footer {
   right: 0;
   animation-duration: 1s;
   animation-timing-function: steps(1, 1, end);
+  backdrop-filter: blur(250px);
+
 }
 
       @keyframes blink {
